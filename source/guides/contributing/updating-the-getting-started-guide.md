@@ -211,8 +211,8 @@ git checkout <THAT SHA WHAT DONE CHANGED> && grunt
 ```
 
 This will write out a built `out.html` and `out.js` file.
-Visit http://jsbin.com/ and create a new bin. Copy the contetns of `out.html` into
-the `HTML` tab, the cotents of `style.css` into the `CSS` tab (JSBin will not load linked stylesheets), and the contents of `out.js` into the `Javascript` tab.
+Visit http://jsbin.com/ and create a new bin. Copy the contents of `out.html` into
+the `HTML` tab, the contents of `style.css` into the `CSS` tab (JSBin will not load linked stylesheets), and the contents of `out.js` into the `Javascript` tab.
 
 Ensure that the `Console` tab does not show errors and that the application in the `Output`
 tab functions properly.
