@@ -1,7 +1,7 @@
 The Ember.js Getting Started Guide is a guide that walks a new
 Ember.js developer through the process of building a small application.
 
-We currently use [TodoMVC](http://todomvc.com/) as a refernece application.
+We currently use [TodoMVC](http://todomvc.com/) as a reference application.
 
 The Getting Started Guide is combination of three resources:
   
@@ -9,11 +9,11 @@ The Getting Started Guide is combination of three resources:
   * A [Github repository](https://github.com/emberjs/quickstart-code-sample/tree/1.0) 
     with a single git commit per step in the guide. Diffs of each step are linked
     in each page of the guide.
-  * A set of runnabale JSBins, one for each step, that are displayed inline on each
+  * A set of runnable JSBins, one for each step, that are displayed inline on each
     page of the guide.
 
 For changes to the non-code text of the guide, a simple pull request to the
-[Ember.js website repo](https://github.com/emberjs/website/) is sufficinet.
+[Ember.js website repo](https://github.com/emberjs/website/) is sufficient.
 
 If you need to make changes to the  code in the guide, the process is a bit
 more complex.
@@ -21,7 +21,10 @@ more complex.
 ## Updating the Sample Application
 The sample application located at https://github.com/emberjs/quickstart-code-sample/
 
-Clone this repository locally, noting the current `SHA`s of the steps:
+Fork this repository on GitHub and clone it locally.
+
+Since each step of the guide has one commit associated with it, we need to note the `SHA`
+of that commit, so we can check it out.  
 
 ```
 git log --pretty=oneline
@@ -52,7 +55,7 @@ b878b1bda93e0ae804eb26f28935bd47bc3e84e4 Displaying the number of incomplete tod
 Move forward through history until you find the first location the change you would like to make occurs:
 
 ```
-gco 8775d1bf4c05eb82adf178be4429e5b868ac145b
+git checkout 8775d1bf4c05eb82adf178be4429e5b868ac145b
 ```
 
 Make your changes:
@@ -124,7 +127,7 @@ git rm js/models/store.js
 git rebase --continue
 ```
 
-It's possbile there will be nothing to continue and you need to run
+It's possible there will be nothing to continue and you need to run
 
 ```
 git rebase --skip
@@ -186,7 +189,7 @@ For each step forward of where your change occured you will need to create new
 JSBins with sample code and note their URLs. 
 
 There is a branch of the `quickstart-code-sample` repo that has a grunt-based
-build process to automate this as much as possible. Unforunately JSBin willnot accept exernal `POST` requests, so this process is more manual than desired.
+build process to automate this as much as possible. Unfortunately JSBin will not accept external `POST` requests, so this process is more manual than desired.
 
 Once on this branch:
 
